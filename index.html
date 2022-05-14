@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Keep Clone In JS</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans:400,500&display=swap">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="modal">
+        <div class="modal-content">
+            <input type="text" class="modal-title" placeholder="Title">
+            <input type="text" class="modal-text" placeholder="Add Your Note">
+            <span class="modal-close-button">Close</span>
+        </div>
+    </div>
+    <main>
+        <header>
+            <img 
+            class="header-logo"
+            src="https://www.gstatic.com/images/branding/product/1x/keep_48dp.png" alt="keep logo">
+            <h2 class="header-title">Google Keep Clone</h2>
+        </header>
+
+        <div id="form-container">
+            <form action="" id="form" autocomplete="off">
+                <input type="text" id="note-title" placeholder="Title">
+                <input type="text" id="note-text" placeholder="Add Your Note...">
+                <div id="form-buttons">
+                    <button id="submit-button" type="submit">Add Note</button>
+                    <button id="form-close-button" type="button">Close</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="notes"></div>
+
+        <div id="placeholder">
+            <!-- <img src="https://icon.now.sh/lightbulb_outline" alt="light bulb" id="placeholder-logo"> -->
+            <i class='bx bxs-bulb'></i>
+            <p id="placeholder-text">Your Notes Will Appear Here</p>
+        </div>
+        <div id="color-tooltip">
+            <div class="color-option" data-color="#fff" id="white"></div>
+            <div class="color-option" data-color="#d7aefb" id="purple"></div>
+            <div class="color-option" data-color="#fbbc04" id="orange"></div>
+            <div class="color-option" data-color="#a7ffeb" id="teal"></div>
+        </div>
+    </main>
+    <script src ="app.js"></script>
+</body>
+</html>
